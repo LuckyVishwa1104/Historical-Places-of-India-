@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Indian Historical Places</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+
+        .hf
+        {
+            color: black;
+            /* background-image: linear-gradient(120deg, orange, white, rgb(2, 166, 2), orange, white, rgb(11, 167, 11), orange, white, rgb(2, 167, 2)); */
+            /* background-image: linear-gradient(120deg,#ddd6f3, #faaca8); */
+            background-image: linear-gradient(120deg,#eecda3, #ef629f);
+            /* background-image: linear-gradient(120deg,#2E3192 , #1BFFFF); */
+            /* background-image: linear-gradient(150deg,#009245, #FCEE21); */
+            text-align: center;
+            font-size: 35px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            left: 0px;
+            border-radius: 7px;
+            box-shadow: 5px 5px 7px black;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .h
+        {
+            font-size: 18px;
+            color: black;
+            font-weight: 550;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .x
+        {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            color: rgb(30, 0, 255);
+            font-size: 25px;
+        }
+
+        .y
+        {
+            margin-top: 0px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        header
+        {
+            top: 0px;
+        }
+
+        footer
+        {
+            bottom: 7px;
+        }
+        
+        #a{grid-area: a1;}
+        #b{grid-area: b1;}
+        #a1{grid-area: aa1;}
+        #c{grid-area: a2;}
+        #d{grid-area: b2;}
+        #a2{grid-area: aa2;}
+        #e{grid-area: a3;}
+        #f{grid-area: b3;}
+        #a3{grid-area: aa3;}
+        #g{grid-area: a4;}
+        #h{grid-area: b4;}
+        #a4{grid-area: aa4;}
+        #i{grid-area: a5;}
+        #j{grid-area: b5;}
+        .grd
+        {
+            display:grid;
+            grid-template-areas:
+            'a1 b1'
+            'aa1 aa1'
+            'a2 b2'
+            'aa2 aa2'
+            'a3 b3'
+            'aa3 aa3'
+            'a4 b4'
+            'aa4 aa4'
+            'a5 b5'; 
+            text-align: center;     
+        }
+
+        .flx1
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 7px;
+            justify-content: space-between;
+        }
+
+        .flx
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img
+        {
+            height: 220px;
+            width: 390px;
+            border-radius: 7px;
+            margin-left: 9px;
+            margin-top: 9px;
+        }
+
+        .textgadient
+        {
+            margin-left: 10px;
+            font-size: 50px;
+            background: -webkit-linear-gradient(89.1deg,#cc2b5e, #753a88);
+            -webkit-background-clip: text;
+            background-clip: var();
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+
+        .a 
+        {
+            border-top: rgb(0, 0, 0);
+            border-width: 2px;
+            border-style: solid;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            margin-right: 10px;
+            margin-left: 10px;
+            box-shadow: 0px 1px 5px black;
+        }
+
+        .b
+        {
+            margin-top: 15px;
+        }
+
+        .c 
+        {
+            margin-top: 3px;
+        }
+
+        .d 
+        {
+            margin-left: 15px;
+            color:rgb(0, 0, 0);
+            margin-top: 4px;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        .e 
+        {
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        .f 
+        {
+            margin-left: 10px;
+        }
+
+        .g 
+        {
+            background-color: bisque;
+            border-radius: 5px;
+            font-size: 25px;
+            border-color: blue;
+
+        }
+
+        .i 
+        {
+            background-color: skyblue;
+            font-size: 25px;
+            border-radius: 5px;
+            border-color: blue;
+        }
+
+        .j 
+        {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .k
+        {
+            margin-right: 10px;
+            color: rgb(84, 80, 80);
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color:rgb(244, 177, 196);">
+
+    <div class="hf flx1">
+        <div class="flx textgadient">
+            <div>
+                TouristBuddy.com
+            </div>
+        </div>
+        <div class="flx">
+            <div>
+                <input type="text" placeholder="Search..." class="g">
+                <m style="font-size: 30px;"><a href="login.html" target="_blank" style="color: rgb(31, 143, 223);"><i class="bi bi-person-circle"></i></a></m>
+                <l style="font-size: 30px;"><i class="bi bi-gear-fill k"></i></l>
+            </div>
+            <!-- class="i" - button  and   class="g" - search -->
+        </div>
+    </div><br>
+
+    <div class="hf flx1">
+        <div class="flx d">
+            <div>
+                <i class="fa-solid fa-house" style="font-size: 20px;"></i><a href="main.html" target="_blank" style="color: black;">Home</a>
+                <i class="fa-brands fa-product-hunt j"></i><a href="product.html" target="_blank" style="color: black;">Products</a>
+                <i class="fa-solid fa-bell-concierge j"></i><a href="service.html" target="_blank" style="color: black;">Services</a>
+                <i class="fa-solid fa-address-card j"></i><a href="about.html" target="_blank" style="color: black;">About</a>
+                <i class="fa-solid fa-envelope j"></i><a href="contact.html" target="_blank" style="color: black;">Contact</a>
+            </div>
+        </div>
+        <div class="flx">
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram e" style="color:rgb(214, 12, 12);"></i></a>
+                <a href="https://twitter.com/i/flow/login?lang=en" target="_blank"><i class="fa-brands fa-twitter e" style="color: #00acee;"></i></a>
+                <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook e" style="color: blue;"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube e" style="color: red;"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin e" style="color:rgb(52, 52, 210);"></i></a>
+            </div> 
+        </div>
+    </div><br>
+
+    <header class="hf" style="font-weight: 550;">Historical Places in India</header>
+
+    <h1 class="hf" style="font-size: 20px;color: black;line-height: 1.5;margin-top: 25px; font-weight: 550;">
+        <div style="margin-left: 15px;margin-right: 15px;padding: 15px;">
+            As of 2022, there are 40 World Heritage Sites located in India. Out of these, 32 are cultural, 7 are natural, and one, the Khangchendzonga National Park, is of mixed type. India has the sixth largest number of sites in the world. The first sites to be listed were the Ajanta Caves, Ellora Caves, Agra Fort, and Taj Mahal, all of which were inscribed in the 1983 session of the World Heritage Committee. The most recent site listed was Dholavira, in 2021. At different times, two sites were listed as endangered: the Manas Wildlife Sanctuary was listed between 1992 and 2011 due to poaching and activities of the Bodo militias, and the monuments at Hampi were listed between 1999 and 2006 due to risks from increased traffic and new constructions in surroundings. One site is transnational, The Architectural Work of Le Corbusier is shared with six other countries. In addition, India has 49 sites on its tentative list.
+        </div>
+    </h1>
+
+    <h1 class="hf" style="font-weight: 550;" >Maharashtra</h1>
+
+    <div class="hf grd">
+
+        <div id="a"><a href="https://www.holidify.com/places/ajanta-and-ellora-caves/" target="blank"><img src="maha1.jpg" class="img" style="margin-top: 8px;"></a></div>
+
+        <div id="b" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/ajanta-and-ellora-caves/" target="blank" class="h x" >Ajanta and Ellora Caves</a><br><div class="c">
+                Ajanta and Ellora caves are considered to be one of the most significant historical places in Maharashtra owing to the magnificent paintings of Ajanta and well-carved sculptures of Ellora. The rock-cut caves containing carvings are the finest example of Indian paintings and sculpture.These hand-carved caves were built and sponsored by the Indian rulers of those periods and almost buried by thick forests. One of the most famous places in the entire Ajanta and Ellora Caves is the Kailash Temple, which is also the single most massive monolithic structure globally. They are a must-visit historical place in Maharashtra.</div>
+            </h6>
+        </div>
+
+        <div id="a1">
+            <div class="a"></div>
+        </div>
+
+        <div id="c"><a href="https://www.holidify.com/places/mumbai/chhatrapati-shivaji-terminus-sightseeing-2885.html" target="blank"><img src="maha2.jpg" class="img "></a></div>
+
+        <div id="d" class="b">
+            <h6 class="h y "> 
+                <a href="https://www.holidify.com/places/mumbai/chhatrapati-shivaji-terminus-sightseeing-2885.html" target="blank" class="h x">Chhatrapati Shivaji Terminus</a><br><div class="c">
+                Chhatrapati Shivaji Terminus (CST), formerly known, Victoria Terminus, is a modern yet archaic railway station in the bustling capital city of Maharashtra - Mumbai. Built in1878, the marvellous structure is the perfect example of the Victorian-Gothic style of architecture in India. In fact, the railway station, which still functions, as usual, was a World Heritage Site under UNESCO in 1997. It is a bustling railway terminus, but it will make you feel like you have stepped into the pages of British history. It is one of the most famous historical places in Maharashtra and is also the second most photographed monument in India.</div>
+            </h6>
+        </div>
+
+        <div id="a2">
+            <div class="a"></div>
+        </div>
+
+        <div id="e"><a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html" target="_blank"><img src="maha3.jpg" class="img"></a></div>
+
+        <div id="f" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html" target="_blank" class="h x">Shaniwar Wada</a><br><div class="c">
+                The former love-nest of Bajirao and Kashi, the Shaniwar Wada in Pune is now one of the most popular tourist destinations in Maharashtra. This grand mansion was built by the Peshwa Bajirao I himself as the residence of the Peshwas. Covering a vast area of about 625 acres, the palace is the ideal place to catch a glimpse of Maharashtra's rich history. The place never fails to amaze the visitor with its various forts and fountain, and the majestic statue of Baji Rao I that greets the visitor at the entrance of the palace. Along with the Eye catching antient sculpture it is fully coverd with greenary, gardens, ponds, flowers.</div>
+            </h6>
+        </div>
+
+        <div id="a3">
+            <div class="a"></div>
+        </div>
+
+        <div id="g"><a href="https://www.holidify.com/places/mumbai/elephanta-caves-sightseeing-2866.html" target="_blank"><img src="maha4.jpg" class="img"></a></div>
+
+        <div id="h" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/mumbai/elephanta-caves-sightseeing-2866.html" target="_blank" class="h x">Elephant Caves</a><br><div class="c">
+                A UNESCO World Heritage Site, Elephanta Caves is a specimen of rock-cut art and architecture from the times of medieval India. The caves are located on the Elephanta or Gharapuri island which is situated at a distance of 11 km from the city of Mumbai. Natively known as Gharapurichi Leni, the Elephanta Caves that exist today are ruins of what were once elaborately painted artworks. It also provides an amazing view of the Mumbai skyline. You can reach the Elephanta Caves via a ferry ride from Gateway of India. This collection of cave temples dates back to 5th to 7th centuries and most of them are dedicated to Lord Shiva.</div>
+            </h6>
+        </div>
+
+        <div id="a4">
+            <div class="a"></div>
+        </div>
+
+        <div id="i"><a href="https://www.holidify.com/places/aurangabad/daulatabad-fort-sightseeing-1231.html" target="_blank"><img src="maha5.jpg" class="img"></a></div>
+
+        <div id="j" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/aurangabad/daulatabad-fort-sightseeing-1231.html" target="_blank" class="h x">Daulatabad Fort</a><br><div class="c">Located 15 km away from the main city of Aurangabad, Daulatabad Fort is an ancient fortification that rises formidably from the midst of verdant greenery. Often hailed as one of the 'seven wonders of Maharashtra, this architectural marvel is believed to have been built in the12th century. Perhaps the most enchanting qualities of the Daulatabad Fort is its location, from the zenith of which you can capture a mesmerising view of the entire city. You need to hike some 750 odd steps up to the top, but the view down below is a wonderful thing to behold.</div>
+            </h6>
+        </div>
+
+    </div>
+
+    <h1 class="hf" style="font-weight: 550;" >Uttar Pradesh</h1>
+
+    <div class="hf grd">
+
+        <div id="a"><a href="https://www.holidify.com/places/agra/taj-mahal-sightseeing-1020.html" target="blank"><img src="UP1.jpg" class="img" style="margin-top: 8px;"></a></div>
+
+        <div id="b" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/agra/taj-mahal-sightseeing-1020.html" target="blank" class="h x">Taj Mahal</a><br><div class="c">
+                One of the seven wonders of the world, Taj Mahal is located on the banks of River Yamuna in Agra. It was built by the Mughal Emperor Shah Jahan as a memorial for his third wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan himself. Constructed entirely out of white marble in the 17th century, Taj Mahal is one of the most beautiful monuments in the world. Every year visitors numbering more than the entire population of Agra pass through the magnificent gates to catch a glimpse of this breathtaking monument! Covering an area of 42 Acres, the construction of the Taj Mahal began in 1631 and it took 17 years to get Completed.</div>
+            </h6>
+        </div>
+
+        <div id="a1">
+            <div class="a"></div>
+        </div>
+
+        <div id="c"><a href="https://www.holidify.com/places/agra/agra-fort-sightseeing-1013.html" target="blank"><img src="UP2.jpg" class="img"></a></div>
+
+        <div id="d" class="b">
+            <h6 class="h y"> 
+                <a href="https://www.holidify.com/places/agra/agra-fort-sightseeing-1013.html" target="blank" class="h x">Agra Fort</a><br><div class="c">
+                Also known as Lal –Qila, Fort Rouge or Qila-i-Akbari, Agra Fort is a symbol of Agra and is so massive that it is often referred to as a walled city. It is the perfect example of Mughal art and architecture, built purely out of red sandstone. Within the premises of Agra Fort lie the most exquisite structures like the Pearl Mosque, Diwan-i I Khas, Diwan-i I Aam, Moti Masjid and Jahangiri Mahal. Some part of the Agra Fort is used by the Indian Army is off-limit to public access. View of Yamuna River and Taj Mahal from the fort's pavilions is mind-stirring.</div>
+            </h6>
+        </div>
+
+        <div id="a2">
+            <div class="a"></div>
+        </div>
+
+        <div id="e"><a href="https://www.holidify.com/places/lucknow/bara-imambara-sightseeing-2646.html" target="_blank"><img src="UP3.jpg" class="img"></a></div>
+
+        <div id="f" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/lucknow/bara-imambara-sightseeing-2646.html" target="_blank" class="h x">Bara Imambara</a><br><div class="c">
+                The Bara Imambara of Lucknow is one of the most famous monuments in the city. The Imambara is primarily known for its incredible maze, known as Bhul Bhulaiya locally, which is located on the upper floor of the monument. It is said that there are 1024 ways to get inside the maze but only 2 to come out.The Imambara has a unique style of construction. Moreover, no wood or metal has been used in the construction of this mosque. One can also have a view of the grave of Nawab Asaf-Ud-Dowlah and his crown, which is kept in the central hall, which is said to be the largest vaulted chamber in the world.</div>
+            </h6>
+        </div>
+
+        <div id="a3">
+            <div class="a"></div>
+        </div>
+
+        <div id="g"><a href="https://www.holidify.com/places/jhansi/jhansi-fort-sightseeing-1254835.html" target="_blank"><img src="UP4.jpg" class="img"></a></div>
+
+        <div id="h" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/jhansi/jhansi-fort-sightseeing-1254835.html" target="_blank" class="h x">Jhansi Fort</a><br><div class="c">
+                The Jhansi Fort is located at the top of Bagira, a hill situated in Uttar Pradesh in the northern part of India. It is a 17th-century architectural monument that has undergone royal construction followed by massive destruction in the first War of Independence against the British East India Company. Within the four-walls lay monuments like Baradari with astute and creative architecture, Kal Kothari or a dungeon for prisoners, Ganesha and Shiva temples and a museum that harbours remnants of the Chandela dynasty - weaponry, clothes and paintings. The streets are filled with bazaars and temples. </div>
+            </h6>
+        </div>
+
+        <div id="a4">
+            <div class="a"></div>
+        </div>
+
+        <div id="i"><a href="https://www.holidify.com/places/agra/fatehpur-sikri-sightseeing-1015.html" target="_blank"><img src="UP5.jpg" class="img"></a></div>
+
+        <div id="j" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/agra/fatehpur-sikri-sightseeing-1015.html" target="_blank" class="h x">Fatehpur Sikri</a><br><div class="c">
+                A unique blend of architectural excellence, as well as religious beliefs - sums up Fatehpur Sikri. It was built by Akbar to honour Sheikh Salim Chisti, whose prediction of the birth of a Mughal heir came true while Akbar was visiting the then city of Sikri. In honour of the prophecy, Akbar built this city and Jama Masjid, a stunning mosque which is still in use today. He also undertook the construction of three palaces for each of his favourite wives, one a Hindu, one a Muslim and one a Christian. An Indo-Islamic Masterpiece, Fatehpur Sikri look its resplendent best during sunset.</div>
+            </h6>
+        </div>
+
+    </div>
+    
+    <h1 class="hf" style="font-weight: 550;" >Rajasthan</h1>
+
+    <div class="hf grd">
+
+        <div id="a"><a href="https://www.holidify.com/places/chittorgarh/vijay-stambh-sightseeing-1585.html" target="blank"><img src="RJ1.jpg" class="img" style="margin-top: 8px;"></a></div>
+
+        <div id="b" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/chittorgarh/vijay-stambh-sightseeing-1585.html" target="blank" class="h x">Vijay Stambh</a><br><div class="c">
+                Vijay Stambha, also known as victory tower, is a piece of resistance of Chittorgarh. It was constructed by the king of Mewar, Rana Kumbha to celebrate his triumph over the combined forces of Malwa and Gujarat led by Mahmud Khilji, in 1448. The mighty tower was constructed between the period of 1458 and 1488 and is so tall and massive that it is visible from any part of the city. Hence, the entire town can be viewed from here.Vijay Stambh is a dedication to Lord Vishnu and has intricate carvings and sculptures of Hindu Gods and Goddesses. </div>
+            </h6>
+        </div>
+
+        <div id="a1">
+            <div class="a"></div>
+        </div>
+
+        <div id="c"><a href="https://www.holidify.com/places/jaipur/hawa-mahal-sightseeing-2131.html" target="blank"><img src="RJ2.jpg" class="img"></a></div>
+
+        <div id="d" class="b">
+            <h6 class="h y"> 
+                <a href="https://www.holidify.com/places/jaipur/hawa-mahal-sightseeing-2131.html" target="blank" class="h x">Hawa Mahal</a><br><div class="c">
+                The massive edifice of Hawa Mahal stands at the intersection of the main road in Jaipur, Badi Chaupad and was built by Maharaja Sawai Pratap Singh in the year 1799. Hawa Mahal derives its name from its unique structure, which is a mesh of small windows that allowed cool wind to enter the palace and hence kept the palace comfortable during the hot summer months. The main reason behind the palace's construction was to allow the women of the royal house to observe the festivities on the streets whilst being unseen from the outside. It is located right on the edge of the City Palace Jaipur and extends right to the 'zenana'.</div>
+        </div>
+
+        <div id="a2">
+            <div class="a"></div>
+        </div>
+
+        <div id="e"><a href="https://www.holidify.com/places/jaipur/amber-fort-sightseeing-2124.html" target="_blank"><img src="RJ3.jpg" class="img"></a></div>
+
+        <div id="f" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/jaipur/amber-fort-sightseeing-2124.html" target="_blank" class="h x">Amer Fort</a><br><div class="c">
+                Cradled on the top of a hill near Jaipur lies the Amer Fort, one of the most magnificent palaces in India. Also commonly known as the Amber Fort, this majestic building with its maze-like passages and serpentine staircases is an architectural masterpiece and with significant importance in Indian history. Only 11 kilometres away from Jaipur, Amer Fort is clad in pink and yellow sandstone and is a part of an extensive complex. Built by one of the most trusted generals of Akbar, Maharaja Man Singh I in the year 1592, Amer Fort served as the main residence of the Rajput Rulers.</div>
+            </h6>
+        </div>
+
+        <div id="a3">
+            <div class="a"></div>
+        </div>
+
+        <div id="g"><a href="https://www.holidify.com/places/kumbhalgarh/kumbhalgarh-fort-sightseeing-2519.html" target="_blank"><img src="RJ4.jpg" class="img"></a></div>
+
+        <div id="h" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/kumbhalgarh/kumbhalgarh-fort-sightseeing-2519.html" target="_blank" class="h x">Kumbhalgarh Fort</a><br><div class="c">
+                Kumbhalgarh Fort is one of the five hill forts of Rajasthan that were declared the UNESCO world heritage site in 2013. Situated in Rajsamand district of Rajasthan, around 82 kilometres from Udaipur, Kumbhalgarh Fort has the second largest wall (38km) after the great wall of China. Constructed on the foothills of Aravalli ranges, it is surrounded by thirteen hill peaks of the ranges and is perched at an elevation of 1,914 m. The magnificent fort is situated in the middle of a forest which has been turned into a wildlife sanctuary.The fort is also the birthplace of Maharana Pratap, one of the most powerful kings of Mewar.</div>
+            </h6>
+        </div>
+
+        <div id="a4">
+            <div class="a"></div>
+        </div>
+
+        <div id="i"><a href="https://www.holidify.com/places/jaipur/jal-mahal-photos-2133.html" target="_blank"><img src="RJ5.jpg" class="img"></a></div>
+
+        <div id="j" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/jaipur/jal-mahal-photos-2133.html" target="_blank" class="h x">Jal Mahal</a><br><div class="c">
+                Sitting prettily right in the centre of the Man Sagar Lake on the outskirts of Jaipur, lies the splendid and tranquil Jal Mahal. A masterful creation, it is bordered by the Nahargarh Hills. This low rise symmetrical Palace was once a shooting lodge for the Maharajas and now fascinates many visitors from all over the world. Jal Mahal was constructed in the 1750s and was commissioned by Maharaja Madho Singh. It is indeed one of the most photographed monuments in India. The most striking feature of this palace is that while only one storey appears above the water level, there are in fact 4 storeys submerged underneath.</div>
+            </h6>
+        </div>
+
+    </div>
+
+    <h1 class="hf" style="font-weight: 550;" >Madhya Pradesh</h1>
+
+    <div class="hf grd">
+
+        <div id="a"><a href="https://www.holidify.com/places/sanchi/" target="blank"><img src="MP1.jpg" class="img" style="margin-top: 8px;"></a></div>
+
+        <div id="b" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/sanchi/" target="blank" class="h x">Sanchi Stupa</a><br><div class="c">
+                Located in Madhya Pradesh, the Buddhist monuments of Sanchi are one of the oldest stone structures in India. Designated a World Heritage site by UNESCO, the Great Stupa was installed in the 3rd century BC by Emperor Ashoka of the Mauryan dynasty. The sculptures and monuments present at the site are a fine example of the development of Buddhist art and architecture in Madhya Pradesh. The stupa sits atop a hill in Sanchi, 46 km from the city of Bhopal. This large hemispherical dome, more than 50 ft high with a diameter of more than 30m was constructed to honour Lord Buddha and houses many important Buddhist relics.</div>
+            </h6>
+        </div>
+
+        <div id="a1">
+            <div class="a"></div>
+        </div>
+
+        <div id="c"><a href="https://www.holidify.com/places/gwalior/gwalior-fort-sightseeing-1951.html" target="blank"><img src="MP2.jpg" class="img"></a></div>
+
+        <div id="d" class="b">
+            <h6 class="h y"> 
+                <a href="https://www.holidify.com/places/gwalior/gwalior-fort-sightseeing-1951.html" target="blank" class="h x">Gwalior Fort</a><br><div class="c">
+                Referred to as 'the pearl amongst fortresses in India' by Mughal emperor Babur, the Gwalior Fort is one of the most impenetrable fortresses located in the entire northern and southern India and is a place you definitely must visit. Situated on the top of a vast rocky mountain near Gwalior in Madhya Pradesh in central India, this imposing structure dominates the entire city of Gwalior. An inseparable part of the identity and architecture of the city, evidence suggests that it has been around since 6th Century. It is also the places where the second oldest reference of the number 'zero' has been found in the form of a carving inside a temple.</div>
+        </div>
+
+        <div id="a2">
+            <div class="a"></div>
+        </div>
+
+        <div id="e"><a href="https://www.holidify.com/places/mandu/jahaz-mahal-sightseeing-5255.html" target="_blank"><img src="MP3.jpg" class="img"></a></div>
+
+        <div id="f" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/mandu/jahaz-mahal-sightseeing-5255.html" target="_blank" class="h x">Jahaz Mahal</a><br><div class="c">
+                The splendid architecture of Jahaz Mahal occupies an expense in the Mandu region of Madhya Pradesh. It was built during the reign of Mandu Sultan Ghiyas-ud-din Khilji, who is believed to have as many as 15,000 women as his consorts. To accommodate the women belonging to the royal consortium, Jahaz Mahal was built in second half of the 15th century. Jahaz Mahal best captures the medieval history of Mundu. Here 'Jahaz' refers to a ship and 'Mahal' refers to a palace, which is a reflection of the edifice itself. Surrounded by pond water, it seems to be floating gently above the surface of the water.</div>
+            </h6>
+        </div>
+
+        <div id="a3">
+            <div class="a"></div>
+        </div>
+
+        <div id="g"><a href="https://www.holidify.com/places/gwalior/jai-vilas-palace-sightseeing-1954.html" target="_blank"><img src="MP4.jpg" class="img"></a></div>
+
+        <div id="h" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/gwalior/jai-vilas-palace-sightseeing-1954.html" target="_blank" class="h x">Jai Vilas Palace</a><br><div class="c">
+                The Jai Vilas Palace, also known as the Jai Vilas Mahal is situated in Gwalior, Madhya Pradesh and is a symbol of age-old Indian culture and opulence, preserved to the modern day. The Maharaja of Gwalior, Jayaji Rao Scindia, had this magnificent edifice built to ensure a grand welcome for King Edward VII, the then Prince of Wales in 1874. Today, it serves as a residence for the descendants of the royal Maratha Scindia family. The palace also serves as a museum stretched over 35 rooms, houses the Chitrangada Raje Art Gallery and a library that comprises more than 5,000 books.</div>
+            </h6>
+        </div>
+
+        <div id="a4">
+            <div class="a"></div>
+        </div>
+
+        <div id="i"><a href="https://www.holidify.com/places/indore/rajwada-sightseeing-2101.html" target="_blank"><img src="MP5.jpg" class="img"></a></div>
+
+        <div id="j" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/indore/rajwada-sightseeing-2101.html" target="_blank" class="h x">Rajwada</a><br><div class="c">
+                Located near the famous Kajuri Market in Indore, Rajwada is a magnificent and historical palace that is located in the city of Indore and was constructed by the Holkars more than 200 years ago. It is a seven-storied structure located near the Chhatris and serves as an excellent example of royal grandeur and architectural skills. Nestled between the crowded streets of the Kajuri Bazar and facing the main square of the city, the Rajwada palace also faces a well-maintained garden that houses a statue of Queen Ahilya Bai, an artificial waterfall and some beautiful fountains. </div>
+            </h6>
+        </div>
+
+    </div>
+
+    <h1 class="hf" style="font-weight: 550;" >Delhi</h1>
+
+    <div class="hf grd">
+
+        <div id="a"><a href="https://www.holidify.com/places/delhi/red-fort-sightseeing-1731.html" target="blank"><img src="DL1.jpg" class="img" style="margin-top: 8px;"></a></div>
+
+        <div id="b" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/delhi/red-fort-sightseeing-1731.html" target="blank" class="h x">Red Fort</a><br><div class="c">
+                Formerly known as Quila-e-Mubarak or the Blessed Fort, the Red Fort lies along the banks of the river Yamuna, whose waters fed the moats surrounding the fort. It was a part of the medieval city of Shahjahanabad, popularly known today as 'Old Delhi'. The entire fort complex is said to represent the architectural creativity and brilliance of Mughal architecture. With so much history and heritage associated with it, the Red Fort is one of the most popular monuments in India and a major tourist attraction in Delhi. It became a UNESCO world heritage site in 2007. The Archaeological Survey of India is at present responsible for the security and preservation of this magnificent monument.</div>
+            </h6>
+        </div>
+
+        <div id="a1">
+            <div class="a"></div>
+        </div>
+
+        <div id="c"><a href="https://www.holidify.com/places/delhi/qutub-minar-and-complex-sightseeing-1727.html" target="blank"><img src="DL2.jpg" class="img"></a></div>
+
+        <div id="d" class="b">
+            <h6 class="h y"> 
+                <a href="https://www.holidify.com/places/delhi/qutub-minar-and-complex-sightseeing-1727.html" target="blank" class="h x">Qutub Minar</a><br><div class="c">
+                Qutub Minar is a minaret or a victory tower located in Qutub complex, a UNESCO World Heritage Site in Delhi's Mehrauli area. With the height of 72.5 metres (238 ft), Qutub Minar is the second tallest monument of Delhi. Its construction was started in 1192 by Qutb Ud-Din-Aibak, founder of Delhi Sultanate after he defeated the last Hindu Ruler of Delhi. He constructed the basement, after which the construction was taken over by his son-in-law and successor Iltutmish who constructed three additional stories. The fourth and fifth storeys were built by Firoz Shah Tuglak.</div>
+        </div>
+
+        <div id="a2">
+            <div class="a"></div>
+        </div>
+
+        <div id="e"><a href="https://www.holidify.com/places/delhi/humayuns-tomb-sightseeing-1717.html" target="_blank"><img src="DL3.jpg" class="img"></a></div>
+
+        <div id="f" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/delhi/humayuns-tomb-sightseeing-1717.html" target="_blank" class="h x">Humayuns Tomb</a><br><div class="c">
+                As the name suggests, Humayun's tomb is the final resting place of the Mughal Emperor Humayun. Located in the Nizamuddin East area of Delhi, it is the first garden-tomb in the Indian subcontinent. This splendid piece of architecture was commissioned for construction by Humayun's chief consort Empress Bega Begum in the year 1569-70 and is one of the very few structures that used red sandstone on such a massive scale at that time. The design of Humayun's tomb is a typical Mughal architecture with Persian influences and was conceptualised by Persian architect Mirak Mirza Ghiyath. Owing to its magnificent design and illustrious history, Humayun's Tomb was featured in UNESCO's World Heritage List in the year 1993.</div>
+            </h6>
+        </div>
+
+        <div id="a3">
+            <div class="a"></div>
+        </div>
+
+        <div id="g"><a href="https://www.holidify.com/places/delhi/jantar-mantar-sightseeing-1721.html" target="_blank"><img src="DL4.jpg" class="img"></a></div>
+
+        <div id="h" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/delhi/jantar-mantar-sightseeing-1721.html" target="_blank" class="h x">Jantra Mantar</a><br><div class="c">
+                Located in the Parliament Street, south Connaught Circle of New Delhi, Jantar Mantar is a vast observatory built to help and improve upon the studies of time and space as was known. It was built by Maharaja Jai Singh in the year 1724 and forms a part of a collection of five such observatories located in Jaipur, Ujjain, Varanasi and Mathura. The Mughal ruler, Muhamad Shah commissioned Maharaja Jai Singh II to reassess the astronomical calendars and charts after which the latter started constructing these sundials in different parts of the country. Jai Singh being well-informed on astronomy wanted to analyse the ancient Islamic calendars for a better evaluation of time.</div>
+            </h6>
+        </div>
+
+        <div id="a4">
+            <div class="a"></div>
+        </div>
+
+        <div id="i"><a href="https://www.holidify.com/places/delhi/safdarjung-tomb-sightseeing-120846.html" target="_blank"><img src="DL5.jpg" class="img"></a></div>
+
+        <div id="j" class="b">
+            <h6 class="h y">
+                <a href="https://www.holidify.com/places/delhi/safdarjung-tomb-sightseeing-120846.html" target="_blank" class="h x">Safdarjung Tomb</a><br><div class="c">
+                Amongst the sundry places in Delhi that attract attention with their history or quaintness, is the twee tomb of Safdarjung. The elegant mausoleum built of marble and sandstone stands untouched in the test of time and boasts of 18th-century Mughal architectural style. Built in 1754, during the reign of Mughal Emperor- Ahmad Shah Bahadur, the namesake tomb is dedicated to the Prime Minister of the court- Safdarjung. Located in the heart of the city, the monument is a low-key tourist attraction of the city. Also known as ‘Safdarjung ka Maqbara’, the mausoleum boasts of a tranquil ambience and a majestic presence owing to its enormous dome, elaborate arches and intricate architecture.</div>
+            </h6>
+        </div>
+
+    </div><br>
+    
+    <div class="hf" style="font-weight: 550;margin-top: 8px;">Thank You!</div><br>
+    <footer class="hf" style="font-weight: 550;margin-top: 8px;">Designed and Developed by - Lucky Vishwakarma</footer>
+
+</body>
+</html>
